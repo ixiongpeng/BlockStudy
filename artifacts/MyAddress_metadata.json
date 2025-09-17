@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "address1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "changAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "ad",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/9_address.sol": "MyAddress"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/9_address.sol": {
+			"keccak256": "0x90c69885e40dd0cb30eed0c6347d6d38eb9a44148eaa70c9d6db525ffa6fecd8",
+			"urls": [
+				"bzz-raw://d5d5bfe89978781a1e1b750eece1c4cec90ae32fd6a610972b941236d2074171",
+				"dweb:/ipfs/QmRh8bkvqtPPekz2t7qnXLWQrzX9ASijsPmCxrWnAWW5w3"
+			]
+		}
+	},
+	"version": 1
+}
