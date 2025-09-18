@@ -12,33 +12,33 @@ contract Wallet{
     mapping(address=>uint256) accountMap; 
 
     // 设置白名单       
-    function setWhiteList(address accountAd) internal {
-        whiteList[accountAd] = true;
+    function setWhiteList() internal {
+        whiteList[msg.sender] = true;
     }
 
     // 移除白名单
-    function removeWhiteList(address accountAddress) internal {
-        whiteList[accountAddress] = false;
+    function removeWhiteList() internal {
+        whiteList[msg.sender] = false;
     }
 
     // 存款
-    function deposit(address accountAddress, uint256 money) public {
-        setWhiteList(accountAddress);
-        accountMap[accountAddress] += money;
+    function deposit(uint256 money) public {
+        setWhiteList();
+        accountMap[msg.sender] += money;
     }
 
     // 取款
-    function withdraw(address accountAd, uint256 money) public payable {
-        require(whiteList[accountAd] == true, unicode"无权限");
-        require(accountMap[accountAd] > money, unicode"存款数额不够");
-        address payable receipient = payable(accountAd);
+    function withdraw(uint256 money) public payable {
+        require(whiteList[msg.sender] == true, unicode"无权限");
+        require(accountMap[msg.sender] > money, unicode"存款数额不够");
+        address payable receipient = payable(msg.sender);
         receipient.transfer(money);
     }
 
     // 余额查询
-    function check(address account)public view  returns(uint256) {
-        require(whiteList[account] == true, unicode"无权限");
-        return accountMap[account];
+    function check()public view  returns(uint256) {
+        require(whiteList[msg.sender] == true, unicode"无权限");
+        return accountMap[msg.sender];
     }
     
 }

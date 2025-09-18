@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "check",
 				"outputs": [
 					{
@@ -27,11 +21,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "accountAddress",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "money",
 						"type": "uint256"
@@ -44,11 +33,6 @@
 			},
 			{
 				"inputs": [
-					{
-						"internalType": "address",
-						"name": "accountAd",
-						"type": "address"
-					},
 					{
 						"internalType": "uint256",
 						"name": "money",
@@ -90,11 +74,11 @@
 	},
 	"sources": {
 		"contracts/10_wallet.sol": {
-			"keccak256": "0x83c239a4daf83df6fcba070782ce28911d9047db401da25d5d54bb47919329a6",
+			"keccak256": "0x56c9804a63f20e41b0d68e12dc9143bb70d6f034edd69f75354c2055b0e3257e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a24dbfeaf486368d07fdee5456afc39ede13441cd1e4be2afd1318a975a979bd",
-				"dweb:/ipfs/QmR2nXEn4SBbXm3P3brjJRVAgAaf2HZmY4UaSUNnTc5n2V"
+				"bzz-raw://e070f4410befe041f3d1e92623931a6cf27c8d465315f28f872ddc79a0b3490d",
+				"dweb:/ipfs/QmRS1YiNGvTQwZX9t1jA53rj7LSJaBgGt5T6sXEbyWpt41"
 			]
 		}
 	},
